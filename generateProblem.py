@@ -3,7 +3,7 @@ from generateSymbol import generateSymbol
 import random
 from computeAns import computeAns
 
-num = random.randint(2,4)
+num = 2
 
 def generateProblem(level):
     if level == 1:
