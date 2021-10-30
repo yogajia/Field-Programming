@@ -12,4 +12,4 @@ def getUserInput():
     num = input("输入：")
     return level, int(num)
 
-print(getUserInput())
+# print(getUserInput())

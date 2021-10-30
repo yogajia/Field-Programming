@@ -8,18 +8,18 @@
 def computeAns(num, symbol):
     for i in range(len(num)):
         if len(symbol)!=0:
-        if symbol[i] == '*' or symbol[i] == '/':
-            if symbol[i] == '*':
-                ans = num[i] * num[i + 1]
-            elif symbol[i] == '/':
-                ans = num[i] / num[i + 1]
-            num.insert(i, ans)
-            num.pop(i + 1)
-            num.pop(i + 1)
-            symbol.pop(i)
-            print(i)
-            print(num)
-            print(symbol)
+            if symbol[i] == '*' or symbol[i] == '/':
+                if symbol[i] == '*':
+                    ans = num[i] * num[i + 1]
+                elif symbol[i] == '/':
+                    ans = num[i] / num[i + 1]
+                num.insert(i, ans)
+                num.pop(i + 1)
+                num.pop(i + 1)
+                symbol.pop(i)
+                print(i)
+                print(num)
+                print(symbol)
 
     ans = num[0]
     for i in range(len(symbol)):
